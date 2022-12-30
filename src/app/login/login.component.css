@@ -1,6 +1,6 @@
 form {
     
-    background-color: red;
+    background-color: rgba(236, 194, 194, 0.541);
     margin-top:6em;
     width: 35em;
 }
@@ -22,7 +22,7 @@ h1 {
 #input1 {
     border: none;
     border-bottom: solid;
-    border-width: 3px;
+    border-width: 2px;
     margin-left: 50px;
     background-color: transparent;
     color: black;
