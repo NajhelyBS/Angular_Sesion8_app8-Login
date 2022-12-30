@@ -1,13 +1,24 @@
 form {
-    
-    background-color: rgba(236, 194, 194, 0.541);
-    margin-top:6em;
-    width: 35em;
+    background: #ff5b77;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,rgba(16, 121, 240, 0.575), #ff5b7693);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(16, 121, 240, 0.521), #ff5b768a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top:4em;
+    width: 40em;
+    border: ridge 4px #ff5b77;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 500;
+  background-image: linear-gradient(
+    #ff5b77 25%,
+    rgb(16, 120, 240) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 #group {
     padding-left: 30px;
     padding-right: 65px;
@@ -15,33 +26,36 @@ h1 {
 #basic-addon1 {
     background-color: transparent;
     border: none;
-    color: black;
+    color: rgb(16, 120, 240);
     font-weight: 800;
+    text-shadow: 0px 1px 4px white;
 }
-
 #input1 {
     border: none;
-    border-bottom: solid;
-    border-width: 2px;
+    border-bottom: solid #ff5b77;
+    border-width: 3px;
     margin-left: 50px;
     background-color: transparent;
-    color: black;
+    color: rgb(16, 120, 240);
     font-weight: 500;
 }
 
 #input2 {
     border: none;
-    border-bottom: solid;
+    border-bottom: solid #ff5b77;
     border-width: 3px;
     margin-left: 35px;
     background-color: transparent;
-    color: black;
+    color: rgb(16, 120, 240);
     font-weight: 500;
 }
 
 .b1 {
      margin-left: 12em;
      margin-right: 12em;
+     background-color: #ff5b769c;
+     border-radius: 8px;
+     
 }
 
 h2 {

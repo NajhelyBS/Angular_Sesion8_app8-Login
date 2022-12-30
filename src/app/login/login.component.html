@@ -4,21 +4,18 @@
         <h1>Login</h1>
         <div class="input-group mt-4 mb-4" id="group">
             <span class="input-group-text" id="basic-addon1">Usuario: </span>
-            <input  #input1 type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input id="input1" #input1 type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group mt-4 mb-3" id="group">
             <span class="input-group-text" id="basic-addon1">Password: </span>
-            <input #input2 type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input id="input2" #input2 type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
         </div>
 
-        <div class="b1 py-5">
+        <div class="b1 mt-5 mb-3">
         <button class="w-100 btn btn-lg btn-outline-primary" type="button" (click)="verificar(input1.value,input2.value)">Log In</button>
         </div>
 
     </form>
     </main>
 
-    <div appCondition id="resultado1" class="d-flex justify-content-center" >
-        <h2 class="text-center py-2">Bienvenido usuario: Angular</h2>
-    </div>

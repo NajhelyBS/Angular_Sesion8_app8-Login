@@ -7,16 +7,20 @@ import { Number } from 'mongoose';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  @Input() usuario:String = "Angular";
-  @Input() password = "123456";
+  usuario:String = "Angular";
+  password:String = "123456";
 
-  verificar(input1:String,input2){
-   
+  
+  verificar(input1:String,input2:String){
+    
+  
     if (input1 == this.usuario && input2 == this.password){
       alert("Correcto");
+
     } else {
-      alert("Incorrecto")
+      alert("Incorrecto");
     }
+
   }
    
 }
