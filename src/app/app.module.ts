@@ -5,16 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ConditionDirective } from './condition.directive';
-import { UserDirective } from './user.directive';
-import { PasswordDirective } from './password.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ConditionDirective,
-    UserDirective,
-    PasswordDirective
   ],
   imports: [
     BrowserModule,

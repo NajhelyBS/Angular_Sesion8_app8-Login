@@ -4,16 +4,16 @@
         <h1>Login</h1>
         <div class="input-group mt-4 mb-4" id="group">
             <span class="input-group-text" id="basic-addon1">Usuario: </span>
-            <input *ngIf="usuario" id="input1" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input  #input1 type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group mt-4 mb-3" id="group">
             <span class="input-group-text" id="basic-addon1">Password: </span>
-            <input *ngIf="password" id="input2" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input #input2 type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
         </div>
 
         <div class="b1 py-5">
-        <button class="w-100 btn btn-lg btn-outline-primary" type="button">Log In</button>
+        <button class="w-100 btn btn-lg btn-outline-primary" type="button" (click)="verificar(input1.value,input2.value)">Log In</button>
         </div>
 
     </form>
