@@ -4,12 +4,12 @@
         <h1>Login</h1>
         <div class="input-group mt-4 mb-4" id="group">
             <span class="input-group-text" id="basic-addon1">Usuario: </span>
-            <input id="input1" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input *ngIf="usuario" id="input1" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group mt-4 mb-3" id="group">
             <span class="input-group-text" id="basic-addon1">Password: </span>
-            <input id="input2" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input *ngIf="password" id="input2" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
         </div>
 
         <div class="b1 py-5">
@@ -19,8 +19,6 @@
     </form>
     </main>
 
-    <section class="d-flex justify-content-center" >
+    <div appCondition id="resultado1" class="d-flex justify-content-center" >
         <h2 class="text-center py-2">Bienvenido usuario: Angular</h2>
-        
-
-    </section>
+    </div>
