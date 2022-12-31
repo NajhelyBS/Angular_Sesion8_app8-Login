@@ -2,7 +2,7 @@ form {
     background: #ff5b77;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,rgba(16, 121, 240, 0.575), #ff5b7693);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgba(16, 121, 240, 0.521), #ff5b768a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin-top:4em;
+    margin-top:2em;
     width: 40em;
     border: ridge 4px #ff5b77;
     padding: 20px;
@@ -59,9 +59,35 @@ h1 {
 }
 
 h2 {
-    text-shadow: 0px 2px 3px red;
+    font-weight: 500;
+    background-image: linear-gradient(
+      #ff5b77 25%,
+      rgb(16, 120, 240) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#resultado1{
+#correcto {
+    background-color: rgba(16, 121, 240, 0.39);
+    width: 40em;
+    height: 10em;
+    border-radius: 20px;
+    border: dashed 2px white;
+}
+#incorrecto {
+    background-color: rgba(16, 121, 240, 0.39);
     display: none;
+    width: 40em;
+    height: 6em;
+    border-radius: 20px;
+    border: dashed 2px white;
+}
+a {
+    cursor: pointer;
+}
+p {
+    color: rgb(16, 120, 240);
+    font-weight: 800;
+    text-shadow: 0px 1px 4px white;
 }

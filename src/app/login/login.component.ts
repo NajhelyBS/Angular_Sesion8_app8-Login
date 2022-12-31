@@ -10,15 +10,29 @@ export class LoginComponent {
   usuario:String = "Angular";
   password:String = "123456";
 
-  
+  grupo1 = [" "];
+
+
   verificar(input1:String,input2:String){
     
-  
     if (input1 == this.usuario && input2 == this.password){
-      alert("Correcto");
 
+      this.grupo1.push(String("Home"));
+      this.grupo1.push(String("Support"));
+      this.grupo1.push(String("Contact"));
+
+      var correcto = document.getElementById('correcto') as HTMLElement;
+      correcto.style.display = 'block';
+      var correcto = document.getElementById('incorrecto') as HTMLElement;
+      correcto.style.display = 'none';
+ 
     } else {
-      alert("Incorrecto");
+
+      var correcto = document.getElementById('incorrecto') as HTMLElement;
+      correcto.style.display = 'block';
+      var correcto = document.getElementById('correcto') as HTMLElement;
+      correcto.style.display = 'none';
+    
     }
 
   }
